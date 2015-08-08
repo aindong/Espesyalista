@@ -5,7 +5,7 @@
     <div id="front_search">
         <div id="front_banner">
             <h1>Search for a clinic near you</h1>
-            <a href="#" class="btn btn-danger btn-search">Start here</a>
+            <a href="/search-clinic" class="btn btn-danger btn-search">Start here</a>
         </div>
     </div>
 

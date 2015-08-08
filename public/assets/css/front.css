@@ -131,7 +131,7 @@ body {
     position:absolute;
     bottom:0;
     width:100%;
-    height:60px;   /* Height of the footer */
+    height:40px;   /* Height of the footer */
 }
 
 .section--footer:before {
@@ -148,4 +148,12 @@ body {
     line-height: 40px;
     margin-top: -30px;
     text-align: center;
+}
+
+#front_feedback .single-item {
+    padding: 20px 200px;
+}
+
+#front_feedback .single-item p {
+    font-size: 18px;
 }

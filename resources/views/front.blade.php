@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="front_search">
+    <div id="front_search">
         <div id="front_banner">
             <h1>Search for a clinic near you</h1>
             <a href="#" class="btn btn-danger btn-search">Start here</a>
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div id="front_feedback" class="red-section section">
+    <div id="front_feedback">
         <div class="align_center">
             <h1>Feedback</h1>
             <div class="row">

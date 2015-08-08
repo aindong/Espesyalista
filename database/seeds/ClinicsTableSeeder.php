@@ -60,5 +60,85 @@ class ClinicsTableSeeder extends Seeder
                 'country'   => 'PH'
             ])
         ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Taguig-Pateros District Hospital',
+            'location'  => serialize([
+                'lat' => 14.5108532,
+                'lon' => 121.0341501,
+                'city'      => 'Taguig, Metro Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Paranaque Premier Medical Center',
+            'location'  => serialize([
+                'lat' => 14.4885432,
+                'lon' => 120.9930613,
+                'city'      => 'Parañaque, Metro Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'PNP General Hospital',
+            'location'  => serialize([
+                'lat' => 14.6315065,
+                'lon' => 121.04531,
+                'city'      => 'Quezon City, Metro Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Delos Santos Medical Centre',
+            'location'  => serialize([
+                'lat' => 14.6200298,
+                'lon' => 121.0175623,
+                'city'      => 'Quezon City, Metro Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'AFP Medical Center. Gen V.luna',
+            'location'  => serialize([
+                'lat' => 14.63485,
+                'lon' => 121.051955,
+                'city'      => 'Quezon City, Metro Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Valenzuela General Hospital',
+            'location'  => serialize([
+                'lat' => 14.6897932,
+                'lon' => 120.9780711,
+                'city'      => 'Valenzuela, Metro Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Dr. Jose Fabella Memorial Hospital',
+            'location'  => serialize([
+                'lat' => 14.606207,
+                'lon' => 120.984143,
+                'city'      => 'Manila, City of Manila',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Canossa Health And Social Center',
+            'location'  => serialize([
+                'lat' => 14.6235757,
+                'lon' => 120.9620583,
+                'city'      => 'Tondo, Manila',
+                'country'   => 'PH'
+            ])
+        ]);
     }
 }

@@ -14,8 +14,10 @@ class ClinicsTableSeeder extends Seeder
         \App\Models\Clinic::create([
             'name'      => 'Philcare Makati',
             'location'  => serialize([
-                'lat' => 14.55609,
-                'lon' => 121.02189
+                'lat'       => 14.55609,
+                'lon'       => 121.02189,
+                'city'      => 'Makati City',
+                'country'   => 'PH'
             ])
         ]);
 
@@ -23,7 +25,9 @@ class ClinicsTableSeeder extends Seeder
             'name'      => 'Aventus Medical Care',
             'location'  => serialize([
                 'lat' => 14.5702459,
-                'lon' => 121.0217766
+                'lon' => 121.0217766,
+                'city'      => 'Makati City',
+                'country'   => 'PH'
             ])
         ]);
 
@@ -31,7 +35,9 @@ class ClinicsTableSeeder extends Seeder
             'name'      => 'FortMED Medical Clinic',
             'location'  => serialize([
                 'lat' => 14.5630284,
-                'lon' => 121.0224857
+                'lon' => 121.0224857,
+                'city'      => 'Makati City',
+                'country'   => 'PH'
             ])
         ]);
 
@@ -39,7 +45,9 @@ class ClinicsTableSeeder extends Seeder
             'name'      => 'Biomedix Inc',
             'location'  => serialize([
                 'lat' => 14.558418,
-                'lon' => 121.014383
+                'lon' => 121.014383,
+                'city'      => 'Makati City',
+                'country'   => 'PH'
             ])
         ]);
 
@@ -47,7 +55,9 @@ class ClinicsTableSeeder extends Seeder
             'name'      => 'HP Plus',
             'location'  => serialize([
                 'lat' => 14.4898456,
-                'lon' => 121.0397747
+                'lon' => 121.0397747,
+                'city'      => 'Makati City',
+                'country'   => 'PH'
             ])
         ]);
     }

@@ -54,3 +54,9 @@ Route::get('user/login', function() {
 Route::get('user/registration', function() {
     return view('users.login');
 });
+
+// Appointments
+Route::get('appointments/create', 'AppointmentsController@create');
+
+// Search Clinic
+Route::get('search-clinic', 'ClinicSearchController@searchNearby');

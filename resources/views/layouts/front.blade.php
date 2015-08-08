@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-5/libs/toastr/toastrf6d7.css"/>
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/dropzone/dropzone-theme23ba.css"/>
     <link rel="stylesheet" href="/assets/css/custom.css"/>
+    <link rel="stylesheet" href="/assets/css/front.css"/>
 
     <style>
         .hide {

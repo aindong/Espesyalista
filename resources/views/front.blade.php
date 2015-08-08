@@ -91,9 +91,6 @@
             });
         });
 
-        $(document).ready(function(){
-            $.srSmoothscroll()
-        })
 
     </script>
 

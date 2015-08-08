@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-5/libs/toastr/toastrf6d7.css"/>
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/dropzone/dropzone-theme23ba.css"/>
     <link rel="stylesheet" href="/assets/css/custom.css"/>
+    <link rel="stylesheet" href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css"/>
 
     <style>
         .hide {
@@ -137,9 +138,11 @@
 <script src="/assets/js/modules/materialadmin/libs/dropzone/dropzone.min.js"></script>
 <script src="/assets/js/modules/materialadmin/core/cache/43ef607ee92d94826432d1d6f09372e1.js"></script>
 {{--<script src="/assets/js/modules/materialadmin/libs/rickshaw/rickshaw.min.js"></script>--}}
+<script src="/assets/js/modules/materialadmin/libs/morris.js/morris.min.js"></script>
 <script src="/assets/js/modules/materialadmin/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script src="/assets/js/modules/materialadmin/libs/select2/select2.min.js"></script>
 <script src="/assets/js/modules/materialadmin/core/demo/Demo.js"></script>
+<script src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 
 <!-- END JAVASCRIPT -->
 

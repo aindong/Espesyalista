@@ -29,7 +29,7 @@
 
             <!-- BEGIN Appointments -->
             <li>
-                <a href="/#appointments">
+                <a href="/clinic/dashboard">
                     <div class="gui-icon"><i class="md md-schedule"></i></div>
                     <span class="title">Appointments</span>
                 </a>
@@ -44,9 +44,9 @@
                 </a>
                 <!--start submenu -->
                 <ul>
-                    <li><a href="/#maintenance/doctors" ><span class="title">Doctors</span></a></li>
-                    <li><a href="/#maintenance/schedules" ><span class="title">Schedules</span></a></li>
-                    <li><a href="/#maintenance/services" ><span class="title">Services</span></a></li>
+                    <li><a href="/clinic/doctors" ><span class="title">Doctors</span></a></li>
+                    <li><a href="/clinic/schedules" ><span class="title">Schedules</span></a></li>
+                    <li><a href="/clinic/services" ><span class="title">Services</span></a></li>
 
                 </ul><!--end /submenu -->
             </li><!--end /menu-li -->
@@ -60,14 +60,14 @@
                 </a>
                 <!--start submenu -->
                 <ul>
-                    <li><a href="/#patients" ><span class="title">List</span></a></li>
+                    <li><a href="/clinic/patients" ><span class="title">List</span></a></li>
                 </ul><!--end /submenu -->
             </li><!--end /menu-li -->
             <!-- END Patients -->
 
             <!-- BEGIN Reports -->
             <li>
-                <a href="">
+                <a href="/clinic/reports">
                     <div class="gui-icon"><i class="md md-trending-up"></i></div>
                     <span class="title">Reports</span>
                 </a>

@@ -1,5 +1,5 @@
 <?php
-namespace App\Espesyalista\User\Interfaces;
+namespace App\Espesyalista\Api\User\Interfaces;
 
 use App\Espesyalista\Base\Interfaces\EloquentInterface;
 

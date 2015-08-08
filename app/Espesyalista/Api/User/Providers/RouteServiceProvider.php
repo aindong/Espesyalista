@@ -1,5 +1,5 @@
 <?php
-namespace App\Espesyalista\User\Providers;
+namespace App\Espesyalista\Api\User\Providers;
 
 use Aindong\Pluggables\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
@@ -13,7 +13,7 @@ class RouteServiceProvider extends ServiceProvider
 	 *
 	 * @var string
 	 */
-	protected $namespace = 'App\Espesyalista\User\Http\Controllers';
+	protected $namespace = 'App\Espesyalista\Api\User\Http\Controllers';
 
 	/**
 	 * Define your module's route model bindings, pattern filters, etc.

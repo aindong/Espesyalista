@@ -1,5 +1,5 @@
 <?php
-namespace App\Espesyalista\User\Providers;
+namespace App\Espesyalista\Api\User\Providers;
 
 use App;
 use Config;
@@ -19,7 +19,7 @@ class UserServiceProvider extends ServiceProvider
 		// This service provider is a convenient place to register your modules
 		// services in the IoC container. If you wish, you may make additional
 		// methods or service providers to keep the code more focused and granular.
-		App::register('App\Espesyalista\User\Providers\RouteServiceProvider');
+		App::register('App\Espesyalista\Api\User\Providers\RouteServiceProvider');
 
 		$this->registerNamespaces();
         $this->bindUserRepositories();
@@ -42,16 +42,16 @@ class UserServiceProvider extends ServiceProvider
      */
     protected function bindUserRepositories()
     {
-        $this->app->bind('\App\Espesyalista\Interfaces\UsersRepoInterface', function ($app) {
-            return new PatientRepo(new App\Models\User);
+        $this->app->bind('\App\Espesyalista\Api\User\Interfaces\UsersRepoInterface', function ($app) {
+            return new App\Espesyalista\Api\User\Repositories\UsersRepo(new App\Models\User);
         });
 
-        $this->app->bind('\App\Espesyalista\Interfaces\UserGroupsRepoInterface', function ($app) {
-            return new PatientRepo(new App\Models\Patients);
+        $this->app->bind('\App\Espesyalista\Api\User\Interfaces\UserGroupsRepoInterface', function ($app) {
+            return new App\Espesyalista\Api\User\Repositories\UserGroupsRepo(new App\Models\UserGroup);
         });
 
-        $this->app->bind('\App\Espesyalista\Interfaces\UserRolesRepoInterface', function ($app) {
-            return new PatientRepo(new App\Models\Patients);
+        $this->app->bind('\App\Espesyalista\Api\User\Interfaces\UserRolesRepoInterface', function ($app) {
+            return new App\Espesyalista\Api\User\Repositories\UserPermissionsRepo(new App\Models\UserPermission);
         });
 
     }

@@ -1,8 +1,8 @@
 <?php
-namespace App\Espesyalista\User\Repositories;
+namespace App\Espesyalista\Api\User\Repositories;
 
 use App\Espesyalista\Base\Repositories\EloquentRepository;
-use App\Espesyalista\User\Interfaces\UsersRepoInterface;
+use App\Espesyalista\Api\User\Interfaces\UsersRepoInterface;
 use Illuminate\Database\Eloquent\Model;
 
 class UsersRepo extends EloquentRepository implements UsersRepoInterface

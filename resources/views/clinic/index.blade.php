@@ -12,6 +12,7 @@
                 <tr>
                     <th>Patient Name</th>
                     <th>Service</th>
+                    <th>Status</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -20,6 +21,7 @@
                 <tr>
                     <th>Patient Name</th>
                     <th>Service</th>
+                    <th>Status</th>
                     <th>Action</th>
                 </tr>
                 </tfoot>
@@ -28,6 +30,7 @@
                 <tr>
                     <td>Tiger Nixon</td>
                     <td>Tooth Removal</td>
+                    <td>Ongoing</td>
                     <td>
                         <a href="#" class="btn btn-success">Check-In</a>
                         <a href="#" class="btn btn-danger">Cancel</a>
@@ -36,6 +39,7 @@
                 <tr>
                     <td>Garrett Winters</td>
                     <td>Root Cannal</td>
+                    <td>Ongoing</td>
                     <td>
                         <a href="#" class="btn btn-success">Check-In</a>
                         <a href="#" class="btn btn-danger">Cancel</a>

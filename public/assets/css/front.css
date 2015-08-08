@@ -71,7 +71,7 @@ body {
 }
 
 .gray-section {
-    background-color: #F3F3F3;
+    background: url('/assets/img/fabric_of_squares_gray.png');
 }
 
 .section {

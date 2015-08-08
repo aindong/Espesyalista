@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/admin/dashboard', function () {
+    return view('index');
+});
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('front');
 });

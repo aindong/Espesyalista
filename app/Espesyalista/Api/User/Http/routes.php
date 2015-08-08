@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['prefix' => 'user'], function() {
+Route::group(['prefix' => 'api/v1/user'], function() {
 	Route::get('/', function() {
 		dd('This is the User module index page.');
 	});

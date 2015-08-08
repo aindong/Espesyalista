@@ -22,6 +22,7 @@ class UserServiceProvider extends ServiceProvider
 		App::register('App\Espesyalista\User\Providers\RouteServiceProvider');
 
 		$this->registerNamespaces();
+        $this->bindUserRepositories();
 	}
 
 	/**
@@ -35,4 +36,23 @@ class UserServiceProvider extends ServiceProvider
 
 		View::addNamespace('user', realpath(__DIR__.'/../Resources/Views'));
 	}
+
+    /**
+     * Bind the patientrepointerface to patientrepo
+     */
+    protected function bindUserRepositories()
+    {
+        $this->app->bind('\App\Espesyalista\Interfaces\UsersRepoInterface', function ($app) {
+            return new PatientRepo(new App\Models\User);
+        });
+
+        $this->app->bind('\App\Espesyalista\Interfaces\UserGroupsRepoInterface', function ($app) {
+            return new PatientRepo(new App\Models\Patients);
+        });
+
+        $this->app->bind('\App\Espesyalista\Interfaces\UserRolesRepoInterface', function ($app) {
+            return new PatientRepo(new App\Models\Patients);
+        });
+
+    }
 }

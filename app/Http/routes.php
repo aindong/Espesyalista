@@ -11,11 +11,35 @@
 |
 */
 
-Route::get('/admin/dashboard', function () {
-    return view('clinic.index');
-});
+//Start Clinic Dashboard
 
-Route::get('/clinic/dashboard', function () {
+    Route::get('/clinic/dashboard', function () {
+        return view('clinic.index');
+    });
+
+    Route::get('/clinic/doctors', function () {
+        return view('clinic.doctor');
+    });
+
+    Route::get('/clinic/schedules', function () {
+        return view('clinic.schedules');
+    });
+
+    Route::get('/clinic/services', function () {
+        return view('clinic.services');
+    });
+
+    Route::get('/clinic/patients', function () {
+        return view('clinic.patients');
+    });
+
+    Route::get('/clinic/reports', function () {
+        return view('clinic.reports');
+    });
+
+//End Clinic Dashboard
+
+Route::get('/admin/dashboard', function () {
     return view('index');
 });
 

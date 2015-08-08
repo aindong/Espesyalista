@@ -2,8 +2,8 @@
 
 @section('content')
     <section class="style-default-bright">
-        <div class="section-header">
-            <h2 class="text-primary">Today's Appointments</h2>
+        <div class="section-header" style="display: inline-flex;">
+            <h2 class="text-primary" style="margin-right: 15px;">Patients</h2>
         </div>
         <div class="section-body">
 
@@ -12,33 +12,43 @@
                 <tr>
                     <th>Patient Name</th>
                     <th>Service</th>
+                    <th>Date</th>
                     <th>Action</th>
                 </tr>
                 </thead>
 
                 <tfoot>
                 <tr>
-                    <th>Patient Name</th>
+                    <th>Name</th>
                     <th>Service</th>
+                    <th>Date</th>
                     <th>Action</th>
                 </tr>
                 </tfoot>
 
                 <tbody>
                 <tr>
-                    <td>Tiger Nixon</td>
-                    <td>Tooth Removal</td>
+                    <td>Brenden Wagner</td>
+                    <td>Immunology/Serology</td>
+                    <td>12 August 2015, 12:00 PM</td>
                     <td>
-                        <a href="#" class="btn btn-success">Check-In</a>
-                        <a href="#" class="btn btn-danger">Cancel</a>
+                        <a href="#" class="btn btn-success">View</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>Garrett Winters</td>
-                    <td>Root Cannal</td>
+                    <td>Cara Stevens</td>
+                    <td>Pregnancy test</td>
+                    <td>9 August 2015, 02:00 PM</td>
                     <td>
-                        <a href="#" class="btn btn-success">Check-In</a>
-                        <a href="#" class="btn btn-danger">Cancel</a>
+                        <a href="#" class="btn btn-success">View</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Caesar Vance</td>
+                    <td>Blood chemistry</td>
+                    <td>10 August 2015, 10:00 AM</td>
+                    <td>
+                        <a href="#" class="btn btn-success">View</a>
                     </td>
                 </tr>
             </table>

@@ -1,0 +1,11 @@
+#front_search {
+    background: url('/assets/img/doctors.png')center top no-repeat");
+}
+
+#front_page {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

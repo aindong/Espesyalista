@@ -21,6 +21,8 @@ class ClinicServiceProvider extends ServiceProvider
 		App::register('App\Espesyalista\Api\Clinic\Providers\RouteServiceProvider');
 
 		$this->registerNamespaces();
+
+        $this->bindClinicRepositories();
 	}
 
 	/**

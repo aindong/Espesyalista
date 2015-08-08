@@ -12,6 +12,7 @@
                 <tr>
                     <th>Patient Name</th>
                     <th>Service</th>
+                    <th>Status</th>
                     <th>Date</th>
                     <th>Action</th>
                 </tr>
@@ -21,6 +22,7 @@
                 <tr>
                     <th>Name</th>
                     <th>Service</th>
+                    <th>Status</th>
                     <th>Date</th>
                     <th>Action</th>
                 </tr>
@@ -30,6 +32,7 @@
                 <tr>
                     <td>Brenden Wagner</td>
                     <td>Immunology/Serology</td>
+                    <td>Ongoing</td>
                     <td>12 August 2015, 12:00 PM</td>
                     <td>
                         <a href="#" class="btn btn-success">View</a>
@@ -38,7 +41,8 @@
                 <tr>
                     <td>Cara Stevens</td>
                     <td>Pregnancy test</td>
-                    <td>9 August 2015, 02:00 PM</td>
+                    <td>Done</td>
+                    <td>5 August 2015, 02:00 PM</td>
                     <td>
                         <a href="#" class="btn btn-success">View</a>
                     </td>
@@ -46,6 +50,7 @@
                 <tr>
                     <td>Caesar Vance</td>
                     <td>Blood chemistry</td>
+                    <td>Ongoing</td>
                     <td>10 August 2015, 10:00 AM</td>
                     <td>
                         <a href="#" class="btn btn-success">View</a>
@@ -62,7 +67,9 @@
     <script src="/assets/js/modules/materialadmin/core/demo/DemoTableDynamic.js"></script>
     <script>
         $(document).ready(function() {
-            $('#queue').DataTable();
+            $('#queue').dataTable( {
+                "order": [[ 3, "desc" ]]
+            } );
         } );
     </script>
 @stop

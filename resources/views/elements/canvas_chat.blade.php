@@ -1,4 +1,4 @@
-<!-- BEGIN OFFCANVAS CHAT -->
+    <!-- BEGIN OFFCANVAS CHAT -->
 <div id="offcanvas-chat" class="offcanvas-pane style-default-light width-12">
     <div class="offcanvas-head style-default-bright">
         <header class="text-primary">Chat with Ann Laurens</header>

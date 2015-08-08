@@ -12,6 +12,10 @@
 */
 
 Route::get('/admin/dashboard', function () {
+    return view('clinic.index');
+});
+
+Route::get('/clinic/dashboard', function () {
     return view('index');
 });
 

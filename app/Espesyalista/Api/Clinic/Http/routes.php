@@ -13,4 +13,6 @@
 
 Route::group(['prefix' => 'api/v1/clinics'], function() {
 	Route::resource('/', 'ClinicsController');
+
+    Route::resource('/{clinicId}/services', 'ClinicServicesController');
 });

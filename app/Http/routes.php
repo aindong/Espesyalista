@@ -18,3 +18,7 @@ Route::get('/admin/dashboard', function () {
 Route::get('/', function () {
     return view('front');
 });
+
+Route::get('login', function() {
+    view('users/login');
+});

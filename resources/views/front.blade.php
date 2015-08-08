@@ -91,7 +91,7 @@
             });
         });
 
-        $(function () {
+        $(document).ready(function(){
             $.srSmoothscroll()
         })
 

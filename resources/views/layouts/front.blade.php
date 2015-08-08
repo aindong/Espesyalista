@@ -27,6 +27,8 @@
 
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-5/libs/toastr/toastrf6d7.css"/>
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/dropzone/dropzone-theme23ba.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick-theme.css"/>
     <link rel="stylesheet" href="/assets/css/custom.css"/>
     <link rel="stylesheet" href="/assets/css/front.css"/>
 
@@ -153,8 +155,12 @@
 <script src="/assets/js/modules/materialadmin/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script src="/assets/js/modules/materialadmin/libs/select2/select2.min.js"></script>
 <script src="/assets/js/modules/materialadmin/core/demo/Demo.js"></script>
+<script src="/assets/js/modules/slick/slick.min.js"></script>
+<script src="/assets/js/modules/mousewheel/jquery.mousewheel.min.js"></script>
+<script src="/assets/js/modules/smoothscroll/jquery.simplr.smoothscroll.min.js"></script>
 
 <!-- END JAVASCRIPT -->
+@yield('page-script')
 
 </body>
 </html>

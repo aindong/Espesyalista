@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c9071140d8778a9f69a86c7fce9f549a",
+    "hash": "4fba8f1be4b13917d49db644fc08a667",
     "packages": [
         {
             "name": "aindong/pluggables",

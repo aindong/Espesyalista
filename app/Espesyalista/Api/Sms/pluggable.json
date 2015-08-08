@@ -1,0 +1,7 @@
+{
+	"name": "Sms",
+	"slug": "sms",
+	"version": "1.0",
+	"description": "This is the description for the Sms module.",
+	"enabled": true
+}

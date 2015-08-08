@@ -11,8 +11,6 @@
 |
 */
 
-Route::group(['prefix' => 'clinic'], function() {
-	Route::get('/', function() {
-		dd('This is the Clinic module index page.');
-	});
+Route::group(['prefix' => 'api/v1/clinics'], function() {
+	Route::resource('/', 'ClinicsController');
 });

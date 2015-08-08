@@ -1,21 +1,21 @@
 <?php
-namespace App\Espesyalista\Api\User\Http\Controllers;
+namespace App\Espesyalista\Api\Clinic\Http\Controllers;
 
-use App\Espesyalista\Api\User\Interfaces\UsersRepoInterface;
+use App\Espesyalista\Api\Clinic\Interfaces\ClinicsRepoInterface;
 use App\Espesyalista\Base\Controllers\ApiController;
 
-class UsersController extends ApiController
+class ClinicsController extends ApiController
 {
-    protected $user;
+    protected $clinic;
 
-    public function __construct(UsersRepoInterface $user)
+    public function __construct(ClinicsRepoInterface $clinic)
     {
-        $this->user = $user;
+        $this->clinic = $clinic;
     }
 
     public function index()
     {
-        $result = $this->user->all();
+        $result = $this->clinic->all();
 
         if ($result->isEmpty())
         {
@@ -27,21 +27,20 @@ class UsersController extends ApiController
 
     public function show($id)
     {
-        $result = $this->user->find($id);
+        $result = $this->clinic->find($id);
 
-        if (! $result)
-        {
+        if (! $result) {
             return $this->responseNotFound();
         }
 
         return $this->responseOk($result);
     }
 
-    public function store()
+    public function store($id)
     {
         $data = \Input::all();
 
-        $result = $this->user->create($data);
+        $result = $this->clinic->create($data);
 
         return $this->createResponse($result);
     }
@@ -50,15 +49,13 @@ class UsersController extends ApiController
     {
         $data = \Input::all();
 
-        $result = $this->user->update($id, $data);
+        $result = $this->clinic->update($id, $data);
 
         return $this->createResponse($result);
     }
 
     public function destroy($id)
     {
-        $result = $this->user->all();
 
-        return $result;
     }
 }

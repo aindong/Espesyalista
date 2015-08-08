@@ -1,11 +1,10 @@
 <?php
-namespace App\Espesyalista\Clinic\Providers;
+namespace App\Espesyalista\Api\Clinic\Providers;
 
 use App;
-use Config;
+use Illuminate\Support\ServiceProvider;
 use Lang;
 use View;
-use Illuminate\Support\ServiceProvider;
 
 class ClinicServiceProvider extends ServiceProvider
 {
@@ -19,7 +18,7 @@ class ClinicServiceProvider extends ServiceProvider
 		// This service provider is a convenient place to register your modules
 		// services in the IoC container. If you wish, you may make additional
 		// methods or service providers to keep the code more focused and granular.
-		App::register('App\Espesyalista\Clinic\Providers\RouteServiceProvider');
+		App::register('App\Espesyalista\Api\Clinic\Providers\RouteServiceProvider');
 
 		$this->registerNamespaces();
 	}
@@ -35,4 +34,14 @@ class ClinicServiceProvider extends ServiceProvider
 
 		View::addNamespace('clinic', realpath(__DIR__.'/../Resources/Views'));
 	}
+
+    /**
+     * Bind the patientrepointerface to patientrepo
+     */
+    protected function bindClinicRepositories()
+    {
+        $this->app->bind('\App\Espesyalista\Api\Clinic\Interfaces\ClinicsRepoInterface', function ($app) {
+            return new App\Espesyalista\Api\Clinic\Repositories\ClinicsRepo(new App\Models\User);
+        });
+    }
 }

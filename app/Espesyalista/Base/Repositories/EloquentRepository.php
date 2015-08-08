@@ -1,7 +1,7 @@
 <?php
 namespace App\Espesyalista\Base\Repositories;
 
-use App\Espesyalista\Base\EloquentInterface;
+use App\Espesyalista\Base\Interfaces\EloquentInterface;
 use Illuminate\Database\Eloquent\Model;
 use Validator;
 

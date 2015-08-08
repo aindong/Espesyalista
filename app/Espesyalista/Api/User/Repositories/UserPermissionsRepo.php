@@ -2,10 +2,10 @@
 namespace App\Espesyalista\User\Repositories;
 
 use App\Espesyalista\Base\Repositories\EloquentRepository;
-use App\Espesyalista\User\Interfaces\UsersRepoInterface;
+use App\Espesyalista\User\Interfaces\UserPermissionsRepoInterface;
 use Illuminate\Database\Eloquent\Model;
 
-class UserRolesRepo extends EloquentRepository implements UsersRepoInterface
+class UserPermissionsRepo extends EloquentRepository implements UserPermissionsRepoInterface
 {
     protected $model;
 

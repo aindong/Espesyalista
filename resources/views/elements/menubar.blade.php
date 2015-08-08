@@ -79,7 +79,7 @@
 
         <div class="menubar-foot-panel">
             <small class="no-linebreak hidden-folded">
-                <span class="opacity-75">ANGELHACKMNL 2015
+                <span class="opacity-75">AngelHackMNL 2015 </span>
             </small>
         </div>
     </div><!--end .menubar-scroll-panel-->

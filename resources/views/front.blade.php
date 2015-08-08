@@ -91,6 +91,10 @@
             });
         });
 
+        $(function () {
+            $.srSmoothscroll()
+        })
+
     </script>
 
 @stop

@@ -11,6 +11,7 @@
     <!-- END META -->
 
     <!-- BEGIN STYLESHEETS -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-5/bootstrap02dc.css"/>
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-5/materialadmin0768.css"/>
@@ -85,6 +86,57 @@
 <script src="/assets/js/modules/materialadmin/core/demo/Demo.js"></script>
 
 <!-- END JAVASCRIPT -->
+
+<nav class="navbar navbar-menu">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" >
+                Espesyalista
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ><a href="{{ url('/home') }}">Dashboard</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                @if (Auth::guest())
+                    <li><a href="{{ url('/auth/login') }}">Login</a></li>
+                    <li><a href="{{ url('/auth/register') }}">Register</a></li>
+                @else
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <?php
+                            if ( isset(Auth::user()->first_name)){
+                                $name = Auth::user()->first_name ." ". Auth::user()->last_name;
+                            } elseif( isset (Auth::user()->name)) {
+                                $name = Auth::user()->name;
+                            } else {
+                                $name = Auth::user()->username;
+                            }
+                            ?>
+                            Hi {{ $name  }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ url('/home') }}">Dashboard</a></li>
+                            <li><a href="{{ url('/profile') }}">My Profile</a></li>
+                            <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                        </ul>
+                    </li>
+                @endif
+            </ul>
+        </div>
+    </div>
+</nav>
+
 @yield('content')
 @yield('page-scripts')
 

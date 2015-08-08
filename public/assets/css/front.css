@@ -1,7 +1,6 @@
 #front_search {
-    background: url('/assets/img/doctors.png')center top no-repeat");
+    background: url('/assets/img/doctors.jpg') 50% 0% / 100% no-repeat fixed;
 }
-
 #front_page {
     width: 1170px;
     margin-right: auto;

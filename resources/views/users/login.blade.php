@@ -26,9 +26,12 @@
                 <div class="form-group form-group-sm">
                     <label class="col-sm-2 control-label" for="sm">Password</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" id="sm">
+                        <input class="form-control" type="password" id="sm">
                     </div>
                 </div>
+
+                <button type="button" class="btn btn-info btn-sm">Login</button>
+
             </form>
             <div class="align_center">
                 <h5>or sign up using</h5>

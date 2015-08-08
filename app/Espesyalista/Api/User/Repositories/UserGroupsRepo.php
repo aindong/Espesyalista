@@ -3,7 +3,7 @@ namespace App\Espesyalista\User\Interfaces;
 
 use App\Espesyalista\Base\Interfaces\EloquentInterface;
 
-interface UserRolesRepo extends EloquentInterface
+interface UserGroupsRepo extends EloquentInterface
 {
 
 }

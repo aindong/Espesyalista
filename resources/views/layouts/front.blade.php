@@ -138,7 +138,7 @@
 </nav>
 
 @yield('content')
-@yield('page-scripts')
+@extends('layouts.footer')
 
 </body>
 </html>

@@ -1,24 +1,29 @@
 @extends('layouts.front')
 
-@section('content')
+@section('page-styles')
     <style>
         .container{
-            margin-top:100px;
+            padding-top:100px;
         }
     </style>
+@stop
+
+@section('content')
+
 
     <div class="container">
         <form action="">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
-                <label>FirstName</label>
+                <label>First Name</label>
                 <input type="text" class="form-control">
             </div>
 
             <div class="form-group">
-                <label>LastName</label>
+                <label>Last Name</label>
                 <input type="text" class="form-control">
             </div>
-            <botton type="button" class="btn btn-info"></botton>
+            <botton type="button" class="btn btn-info">LOGIN</botton>
         </form>
     </div>
 @stop

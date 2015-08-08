@@ -17,6 +17,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Indong',
             'middlename'    => 'Pineda',
             'email'         => 'alleo@espesyalista.com',
+            'mobilenum'     => '09253072394',
             'password'      => Hash::make('password')
         ]);
 
@@ -26,6 +27,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Cheng',
             'middlename'    => 'Manlutac',
             'email'         => 'nkcheng@espesyalista.com',
+            'mobilenum'     => '09229357919',
             'password'      => Hash::make('password')
         ]);
 
@@ -35,6 +37,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Pulido',
             'middlename'    => 'Tulabot',
             'email'         => 'mark@espesyalista.com',
+            'mobilenum'     => '09124092030',
             'password'      => Hash::make('password')
         ]);
     }

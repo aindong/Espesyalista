@@ -21,6 +21,8 @@ class ClinicServiceProvider extends ServiceProvider
 		App::register('App\Espesyalista\Api\Clinic\Providers\RouteServiceProvider');
 
 		$this->registerNamespaces();
+
+        $this->bindClinicRepositories();
 	}
 
 	/**
@@ -41,7 +43,11 @@ class ClinicServiceProvider extends ServiceProvider
     protected function bindClinicRepositories()
     {
         $this->app->bind('\App\Espesyalista\Api\Clinic\Interfaces\ClinicsRepoInterface', function ($app) {
-            return new App\Espesyalista\Api\Clinic\Repositories\ClinicsRepo(new App\Models\User);
+            return new App\Espesyalista\Api\Clinic\Repositories\ClinicsRepo(new App\Models\Clinic);
+        });
+
+        $this->app->bind('\App\Espesyalista\Api\Clinic\Interfaces\ClinicServicesRepoInterface', function ($app) {
+            return new App\Espesyalista\Api\Clinic\Repositories\ClinicServicesRepo(new App\Models\ClinicService);
         });
     }
 }

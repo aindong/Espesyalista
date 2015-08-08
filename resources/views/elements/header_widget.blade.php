@@ -29,8 +29,8 @@
                 </a>
             </li>
             <li class="dropdown-header">Options</li>
-            <li><a href="../pages/login.html">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
-            <li><a href="../pages/login.html">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+            <li><a href="/user/login">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+            <li><a href="/user/login">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
         </ul><!--end .dropdown-menu -->
     </li><!--end .dropdown -->
     <li class="dropdown hidden-xs">

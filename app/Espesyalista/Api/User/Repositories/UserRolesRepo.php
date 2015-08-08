@@ -1,9 +1,16 @@
 <?php
-namespace App\Espesyalista\User\Interfaces;
+namespace App\Espesyalista\User\Repositories;
 
-use App\Espesyalista\Base\Interfaces\EloquentInterface;
+use App\Espesyalista\Base\Repositories\EloquentRepository;
+use App\Espesyalista\User\Interfaces\UsersRepoInterface;
+use Illuminate\Database\Eloquent\Model;
 
-interface UserRolesRepo extends EloquentInterface
+class UserRolesRepo extends EloquentRepository implements UsersRepoInterface
 {
+    protected $model;
 
+    public function __construct(Model $model)
+    {
+        $this->model = $model;
+    }
 }

@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('front');
 });
 
-Route::get('login', function() {
-    view('users/login');
+Route::get('user/login', function() {
+    return view('users.login');
+});
+
+Route::get('user/registration', function() {
+    return view('users.login');
 });

@@ -1,10 +1,10 @@
 <?php
-namespace App\Espesyalista\User\Database\Seeds;
+namespace App\Espesyalista\Sms\Database\Seeds;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class UserDatabaseSeeder extends Seeder
+class SmsDatabaseSeeder extends Seeder
 {
 	/**
 	 * Run the database seeds.
@@ -15,7 +15,7 @@ class UserDatabaseSeeder extends Seeder
 	{
 		Model::unguard();
 
-		// $this->call('App\Espesyalista\User\Database\Seeds\FoobarTableSeeder');
+		// $this->call('App\Espesyalista\Sms\Database\Seeds\FoobarTableSeeder');
 	}
 
 }

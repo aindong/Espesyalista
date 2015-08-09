@@ -3,7 +3,7 @@
 @section('page-styles')
     <style>
         #front_booking .booking {
-            padding-top: 100px;
+            padding-top: 75px;
         }
 
         #front_booking .navbar-menu .navbar-nav > .open > a,
@@ -21,7 +21,7 @@
 
 @section('content')
 
-    <div id="front_booking" class="gray-section section">
+    <div id="front_booking" class="gray-section section" style="height: 915px;">
         <div class="align_center booking container">
             <!-- BEGIN FORM WIZARD -->
             <div class="row">

@@ -36,7 +36,7 @@ body {
     .nav > li > a:hover,
     .dropdown-menu > li > a:hover,
     .navbar #active {
-        /*background-color: #B01D2E !important;*/
+        background-color: #B01D2E !important;
     }
 
     .navbar-menu .dropdown-menu { background-color: #db2338 !important; }

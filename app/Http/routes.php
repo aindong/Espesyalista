@@ -38,7 +38,7 @@ Route::get('user/login', function() {
 });
 
 Route::get('user/registration', function() {
-    return view('users.login');
+    return view('users.registration');
 });
 
 // Appointments

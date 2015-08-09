@@ -5,7 +5,10 @@
     <div id="front_search">
         <div id="front_banner">
             <h1>Search for a clinic near you</h1>
-            <a href="/search-clinic" class="btn btn-danger btn-search">Start here</a>
+            <a href="/search-clinic" class="btn btn-danger btn-search">
+                <img src="assets/img/Espesyalista-Icon.png" style="height: 70px;"/> <br>
+                Start here
+            </a>
         </div>
     </div>
 

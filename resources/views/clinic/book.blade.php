@@ -145,16 +145,14 @@
 
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <a href="" class="btn btn-danger" > Confirm Booking </a>
+                                                    <a href="" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Confirm Booking </a>
                                                 </div>
                                             </div>
 
                                         </div><!--end #tab4 -->
                                     </div><!--end .tab-content -->
                                     <ul class="pager wizard">
-                                        <li class="previous first"><a class="btn-raised" href="javascript:void(0);">First</a></li>
                                         <li class="previous"><a class="btn-raised" href="javascript:void(0);">Previous</a></li>
-                                        <li class="next last"><a class="btn-raised" href="javascript:void(0);">Last</a></li>
                                         <li class="next"><a class="btn-raised" href="javascript:void(0);">Next</a></li>
                                     </ul>
                                 </form>
@@ -167,10 +165,30 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">You have successfully booked your appointment!</h4>
+                </div>
+                <div class="modal-body">
+                    Thank you!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 @stop
 
 @section('page-script')
     <script src="/assets/js/modules/materialadmin/core/demo/DemoFormWizard.js"></script>
     <script src="/assets/js/modules/materialadmin/core/demo/DemoFormComponents.js"></script>
+
 
 @stop

@@ -71,6 +71,7 @@
         }
         else {
             for (i = 0; i < array_length; i++) {
+                //noinspection JSUnresolvedVariable
                 callback_params = original_callback_params;
                 callback_params.splice(0, 0, array[i]);
                 array_return.push(callback.apply(this, callback_params));

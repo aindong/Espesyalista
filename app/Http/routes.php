@@ -11,6 +11,20 @@
 |
 */
 
+//Start Clinic Dashboard
+
+    Route::get('/clinic/dashboard', 'ClinicController@index');
+    Route::get('/clinic/reports', 'ClinicController@report');
+    Route::get('/clinic/doctors', 'ClinicController@doctor');
+    Route::get('/clinic/schedules', 'ClinicController@schedule');
+    Route::get('/clinic/services', 'ClinicController@service');
+    Route::get('/clinic/patients', 'ClinicController@patient');
+
+
+//End Clinic Dashboard
+
+Route::get('/clinic/{id}/book', 'ClinicController@book');
+
 Route::get('/admin/dashboard', function () {
     return view('index');
 });
@@ -24,5 +38,11 @@ Route::get('user/login', function() {
 });
 
 Route::get('user/registration', function() {
-    return view('users.registration');
+    return view('users.login');
 });
+
+// Appointments
+Route::get('appointments/create', 'AppointmentsController@create');
+
+// Search Clinic
+Route::get('search-clinic', 'ClinicSearchController@searchNearby');

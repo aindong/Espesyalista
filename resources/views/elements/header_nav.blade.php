@@ -2,8 +2,8 @@
     <ul class="header-nav header-nav-options">
         <li class="header-nav-brand" >
             <div class="brand-holder">
-                <a href="dashboard.html">
-                    <span class="text-lg text-bold text-primary">Dashboard</span>
+                <a href="/clinic/dashboard">
+                    <span class="text-lg text-bold text-primary">Clinic Dashboard</span>
                 </a>
             </div>
         </li>

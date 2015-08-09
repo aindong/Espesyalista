@@ -24,11 +24,13 @@
     <link type="text/css" rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/DataTables/extensions/dataTables.colVis941e.css" />
     <link type="text/css" rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/DataTables/extensions/dataTables.tableTools4029.css" />
     <link type="text/css" rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/select2/select201ef.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/wizard/wizardfa6c.css?1422823375" />
 
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-5/libs/toastr/toastrf6d7.css"/>
     <link rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/dropzone/dropzone-theme23ba.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick-theme.css"/>
+    <link type="text/css" rel="stylesheet" href="/assets/css/modules/materialadmin/css/theme-default/libs/bootstrap-datepicker/datepicker3f394.css?1422823364" />
     <link rel="stylesheet" href="/assets/css/custom.css"/>
     <link rel="stylesheet" href="/assets/css/front.css"/>
 
@@ -150,12 +152,18 @@
 <script src="/assets/js/modules/materialadmin/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 <script src="/assets/js/modules/materialadmin/libs/toastr/toastr.js"></script>
 <script src="/assets/js/modules/materialadmin/libs/dropzone/dropzone.min.js"></script>
+
+<script src="/assets/js/modules/materialadmin/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/assets/js/modules/materialadmin/libs/jquery-validation/dist/additional-methods.min.js"></script>
+<script src="/assets/js/modules/materialadmin/libs/wizard/jquery.bootstrap.wizard.min.js"></script>
+
 <script src="/assets/js/modules/materialadmin/core/cache/43ef607ee92d94826432d1d6f09372e1.js"></script>
 {{--<script src="/assets/js/modules/materialadmin/libs/rickshaw/rickshaw.min.js"></script>--}}
 <script src="/assets/js/modules/materialadmin/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script src="/assets/js/modules/materialadmin/libs/select2/select2.min.js"></script>
 <script src="/assets/js/modules/materialadmin/core/demo/Demo.js"></script>
 <script src="/assets/js/modules/slick/slick.min.js"></script>
+<script src="/assets/js/modules/materialadmin/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
 <script src="/assets/js/modules/mousewheel/jquery.mousewheel.min.js"></script>
 <script src="/assets/js/modules/smoothscroll/jquery.simplr.smoothscroll.min.js"></script>
 

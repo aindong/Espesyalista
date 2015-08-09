@@ -17,6 +17,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Indong',
             'middlename'    => 'Pineda',
             'email'         => 'alleo@espesyalista.com',
+            'mobilenum'     => '09253072394',
             'password'      => Hash::make('password')
         ]);
 
@@ -26,6 +27,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Cheng',
             'middlename'    => 'Manlutac',
             'email'         => 'nkcheng@espesyalista.com',
+            'mobilenum'     => '09229357919',
             'password'      => Hash::make('password')
         ]);
 
@@ -35,6 +37,97 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Pulido',
             'middlename'    => 'Tulabot',
             'email'         => 'mark@espesyalista.com',
+            'mobilenum'     => '09124092030',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Christopher',
+            'lastname'      => 'Gosselin',
+            'middlename'    => 'Hulabot',
+            'email'         => 'chris@gosselin.com',
+            'mobilenum'     => '09124092031',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Brielle',
+            'lastname'      => 'Williamson',
+            'middlename'    => 'Caesar',
+            'email'         => 'brielle@williamson.com',
+            'mobilenum'     => '09124092032',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Cara',
+            'lastname'      => 'Stevens',
+            'middlename'    => 'Cox',
+            'email'         => 'carstev@cox.com',
+            'mobilenum'     => '09124092033',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Airi',
+            'lastname'      => 'Satou',
+            'middlename'    => 'Ken',
+            'email'         => 'airi@satouken.com',
+            'mobilenum'     => '09124092034',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Finn',
+            'lastname'      => 'Camacho',
+            'middlename'    => 'Winters',
+            'email'         => 'finn@winters.com',
+            'mobilenum'     => '09124092035',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Michelle',
+            'lastname'      => 'House',
+            'middlename'    => 'Liang',
+            'email'         => 'michelle@liang.com',
+            'mobilenum'     => '09124092036',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Jonas',
+            'lastname'      => 'Alexander',
+            'middlename'    => 'Greer',
+            'email'         => 'jonas@alexander.com',
+            'mobilenum'     => '09124092037',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Sonya',
+            'lastname'      => 'Frost',
+            'middlename'    => 'Fitzpatrick',
+            'email'         => 'fitzpatrick@frost.com',
+            'mobilenum'     => '09124092038',
+            'password'      => Hash::make('password')
+        ]);
+
+        \App\Models\User::create([
+            'group_id'      => 5,
+            'firstname'     => 'Quinn',
+            'lastname'      => 'Flynn',
+            'middlename'    => 'Davidson',
+            'email'         => 'flynn@quinn.com',
+            'mobilenum'     => '09124092039',
             'password'      => Hash::make('password')
         ]);
     }

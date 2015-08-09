@@ -11,23 +11,23 @@ class UserGroupsTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\UserGroups::create([
+        \App\Models\UserGroup::create([
             'name' => 'Super Admin'
         ]);
 
-        \App\UserGroups::create([
+        \App\Models\UserGroup::create([
             'name' => 'Admin'
         ]);
 
-        \App\UserGroups::create([
+        \App\Models\UserGroup::create([
             'name' => 'Clinic Manager'
         ]);
 
-        \App\UserGroups::create([
+        \App\Models\UserGroup::create([
             'name' => 'Doctor'
         ]);
 
-        \App\UserGroups::create([
+        \App\Models\UserGroup::create([
             'name' => 'User'
         ]);
     }

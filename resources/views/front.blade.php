@@ -5,7 +5,7 @@
     <div id="front_search">
         <div id="front_banner">
             <h1>Search for a clinic near you</h1>
-            <a href="#" class="btn btn-danger btn-search">Start here</a>
+            <a href="/search-clinic" class="btn btn-danger btn-search">Start here</a>
         </div>
     </div>
 
@@ -42,15 +42,12 @@
             <div class="container single-item">
                 <div>
                     <p>
-                        When people are complementing our homepage
-                        (which a lot of our customers/suppliers have
-                        been doing), or when talking about homepages
-                        in general, I recommend you and your company
-                        a lot. I inform about high value for money,
-                        and that the language and geographical
-                        distance does not mean anything.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Distinctio dolor dolorum ducimus ea facilis, iure minima
+                        quas quis quisquam rem rerum sapiente sint ut, vitae
+                        voluptatum? Corporis quod sed voluptatem.
                     </p>
-                    <h5>BO ANDERSEN</h5>
+                    <h5>JOHN DOE</h5>
                 </div>
 
                 <div>

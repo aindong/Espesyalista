@@ -140,5 +140,105 @@ class ClinicsTableSeeder extends Seeder
                 'country'   => 'PH'
             ])
         ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Centuria Medical Makati',
+            'location'  => serialize([
+                'lat' => 14.566844,
+                'lon' => 121.028749,
+                'city'      => 'Makati Avenue',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Derma 360',
+            'location'  => serialize([
+                'lat' => 14.565516,
+                'lon' => 121.036438,
+                'city'      => 'Estrella Street, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Asian Center for Dental Specialties',
+            'location'  => serialize([
+                'lat' => 14.554642,
+                'lon' => 121.015072,
+                'city'      => 'Legaspi Village 1229, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Patient First Medical Center',
+            'location'  => serialize([
+                'lat' => 14.552213,
+                'lon' => 121.025712,
+                'city'      => 'Parkway Dr, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Dermclinic',
+            'location'  => serialize([
+                'lat' => 14.5519936,
+                'lon' => 121.0155686,
+                'city'      => 'Legazpi Village, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Aventus Medical Care, Inc.',
+            'location'  => serialize([
+                'lat' => 14.5702459,
+                'lon' => 121.0217766,
+                'city'      => 'Legazpi, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Clarence Slimming and Dermatology Centre',
+            'location'  => serialize([
+                'lat' => 14.5587504,
+                'lon' => 121.0329461,
+                'city'      => '28 Jupiter, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Skin Metro Face & Body Care',
+            'location'  => serialize([
+                'lat' => 14.570218,
+                'lon' => 121.0218649,
+                'city'      => 'Street corner Dela Rosa Street, Legaspi Village, Makati City',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Shinagawa Lasik and Aesthetics Philippines',
+            'location'  => serialize([
+                'lat' => 14.556576,
+                'lon' => 121.022229,
+                'city'      => 'Paseo de Roxas, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
+
+        \App\Models\Clinic::create([
+            'name'      => 'Contours Advanced Face and Body Sculpting Institute',
+            'location'  => serialize([
+                'lat' => 14.537812,
+                'lon' => 121.017451,
+                'city'      => 'Paseo De Magallanes 1232, Makati',
+                'country'   => 'PH'
+            ])
+        ]);
     }
 }

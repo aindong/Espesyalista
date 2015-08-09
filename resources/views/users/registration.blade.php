@@ -77,12 +77,7 @@
                     <label class="col-sm-2 control-label" for="sm">Password</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="password" id="sm">
-                    </div>
-                </div>
-                <div class="form-group form-group-sm">
-                    <div class="col-sm-12"><hr>
-                        <button type="button" class="btn btn-danger btn-sm">Register</button>
-                    </div>
+                    </div><hr><button type="button" class="btn btn-danger btn-sm">Register</button>
                 </div>
             </form>
         </div>

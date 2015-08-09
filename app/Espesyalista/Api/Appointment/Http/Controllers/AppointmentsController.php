@@ -56,7 +56,7 @@ class AppointmentsController extends ApiController
         $result = $this->appointment->create($data);
 
         // Fire user booked
-        event(new UserBooked($result));
+        event(new UserBooked($data));
 
         return $this->createResponse($result);
     }

@@ -104,8 +104,6 @@ body {
 }
 
 .btn-search {
-    background-color: #db2338;
-    border-color: #db2338;
     border-radius: 0px;
     font-size: 22px;
     padding: 15px 80px;
@@ -765,5 +763,9 @@ body {
 .no-padding .form-wizard .pager {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.progress-bar-primary {
+    background-color: #7dd8d2;
 }
 

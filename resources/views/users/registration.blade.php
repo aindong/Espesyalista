@@ -71,7 +71,7 @@
                     <div class="col-sm-10">
                         <input class="form-control" type="password" id="sm">
                     </div>
-                    <button type="button" class="btn btn-info btn-sm">Register</button>
+                    <button type="button" class="btn btn-danger btn-sm">Register</button>
                 </div>
 
                 </form>

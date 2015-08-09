@@ -13,12 +13,12 @@
 
 //Start Clinic Dashboard
 
-    Route::get('/clinic/{id}/dashboard', 'ClinicController@index');
-    Route::get('/clinic/{id}/reports', 'ClinicController@report');
-    Route::get('/clinic/{id}/doctors', 'ClinicController@doctor');
-    Route::get('/clinic/{id}/schedules', 'ClinicController@schedule');
-    Route::get('/clinic/{id}/services', 'ClinicController@service');
-    Route::get('/clinic/{id}/patients', 'ClinicController@patient');
+    Route::get('/clinic/dashboard', 'ClinicController@index');
+    Route::get('/clinic/reports', 'ClinicController@report');
+    Route::get('/clinic/doctors', 'ClinicController@doctor');
+    Route::get('/clinic/schedules', 'ClinicController@schedule');
+    Route::get('/clinic/services', 'ClinicController@service');
+    Route::get('/clinic/patients', 'ClinicController@patient');
 
 
 //End Clinic Dashboard

@@ -3,32 +3,32 @@ namespace App\Http\Controllers;
 
 class ClinicController extends Controller
 {
-    public function index($id)
+    public function index()
     {
         return view('clinic.index');
     }
 
-    public function report($id)
+    public function report()
     {
         return view('clinic.reports');
     }
 
-    public function doctor($id)
+    public function doctor()
     {
         return view('clinic.doctor');
     }
 
-    public function schedule($id)
+    public function schedule()
     {
         return view('clinic.schedules');
     }
 
-    public function service($id)
+    public function service()
     {
         return view('clinic.services');
     }
 
-    public function patient($id)
+    public function patient()
     {
         return view('clinic.patients');
     }

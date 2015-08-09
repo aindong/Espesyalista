@@ -21,6 +21,8 @@ class AppointmentServiceProvider extends ServiceProvider
 		App::register('App\Espesyalista\Api\Appointment\Providers\RouteServiceProvider');
 
 		$this->registerNamespaces();
+
+        $this->bindAppointmentsIterfaces();
 	}
 
 	/**
@@ -34,4 +36,11 @@ class AppointmentServiceProvider extends ServiceProvider
 
 		View::addNamespace('appointment', realpath(__DIR__.'/../Resources/Views'));
 	}
+
+    protected function bindAppointmentsIterfaces()
+    {
+        $this->app->bind('\App\Espesyalista\Api\Appointment\Interfaces\AppointmentsRepoInterface', function ($app) {
+            return new App\Espesyalista\Api\Appointment\Repositories\AppointmentsRepo(new App\Models\Appointment);
+        });
+    }
 }

@@ -5,6 +5,16 @@
         #front_booking .booking {
             padding-top: 100px;
         }
+
+        #front_booking .navbar-menu .navbar-nav > .open > a,
+        #front_booking .navbar-menu .navbar-nav > .open > a:hover,
+        #front_booking .navbar-menu .navbar-nav > .open > a:focus,
+        #front_booking .nav > li > a:focus,
+        #front_booking .nav > li > a:hover,
+        #front_booking .dropdown-menu > li > a:hover,
+        #front_booking .navbar #active {
+            background-color: transparent !important;
+        }
     </style>
 @stop
 
@@ -134,7 +144,8 @@
     <script src="/assets/js/modules/materialadmin/core/demo/DemoFormWizard.js"></script>
     <script>
         $(document).ready(function(){
-
+            $('#demo-date-inline').datepicker({
+            });
         });
 
 

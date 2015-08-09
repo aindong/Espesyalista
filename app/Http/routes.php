@@ -13,31 +13,17 @@
 
 //Start Clinic Dashboard
 
-    Route::get('/clinic/dashboard', function () {
-        return view('clinic.index');
-    });
+    Route::get('/clinic/{id}/dashboard', 'ClinicController@index');
+    Route::get('/clinic/{id}/reports', 'ClinicController@report');
+    Route::get('/clinic/{id}/doctors', 'ClinicController@doctor');
+    Route::get('/clinic/{id}/schedules', 'ClinicController@schedule');
+    Route::get('/clinic/{id}/services', 'ClinicController@service');
+    Route::get('/clinic/{id}/patients', 'ClinicController@patient');
 
-    Route::get('/clinic/doctors', function () {
-        return view('clinic.doctor');
-    });
-
-    Route::get('/clinic/schedules', function () {
-        return view('clinic.schedules');
-    });
-
-    Route::get('/clinic/services', function () {
-        return view('clinic.services');
-    });
-
-    Route::get('/clinic/patients', function () {
-        return view('clinic.patients');
-    });
-
-    Route::get('/clinic/reports', function () {
-        return view('clinic.reports');
-    });
 
 //End Clinic Dashboard
+
+Route::get('/clinic/{id}/book', 'ClinicController@book');
 
 Route::get('/admin/dashboard', function () {
     return view('index');

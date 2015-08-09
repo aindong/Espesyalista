@@ -127,7 +127,7 @@
                     body += '<ul>';
                     body += '<li>Consultation</li><li>Laboratory</li><li>X-ray</li><li>Ultrasound</li>'
                     body += '</ul>';
-                    body += '<a href="/clinics/' + data.id + '/book" class="btn btn-danger">Book now</a>';
+                    body += '<a href="/clinic/' + data.id + '/book" class="btn btn-danger">Book now</a>';
                 return body;
             }
         }());

@@ -27,24 +27,8 @@
                 </tfoot>
 
                 <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>Tooth Removal</td>
-                    <td>Ongoing</td>
-                    <td>
-                        <a href="#" class="btn btn-success">Check-In</a>
-                        <a href="#" class="btn btn-danger">Cancel</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Garrett Winters</td>
-                    <td>Root Cannal</td>
-                    <td>Ongoing</td>
-                    <td>
-                        <a href="#" class="btn btn-success">Check-In</a>
-                        <a href="#" class="btn btn-danger">Cancel</a>
-                    </td>
-                </tr>
+
+                </tbody>
             </table>
 
         </div>
@@ -56,7 +40,24 @@
     <script src="/assets/js/modules/materialadmin/core/demo/DemoTableDynamic.js"></script>
     <script>
         $(document).ready(function() {
-            $('#queue').DataTable();
+            var $tableBody = $('#queue tbody');
+
+            $.get('/api/v1/appointments/clinic/1', function(res) {
+                $.each(res.data, function(k, v) {
+                    console.log(v);
+                    var el  = '<tr>';
+                        el += '<td>' + v.user.firstname + ' ' + v.user.lastname + '</td>';
+                        el += '<td>' + v.service.name + '</td>';
+                        el += '<td>inactive</td>';
+                        el += '<td>';
+                        el += '<a href="#" class="btn btn-success">Check-In</a><a href="#" class="btn btn-danger">Cancel</a>';
+                        el += '</td></tr>';
+
+                    $tableBody.append(el);
+                });
+
+                $('#queue').DataTable();
+            });
         } );
     </script>
 @stop

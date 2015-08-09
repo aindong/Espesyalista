@@ -12,7 +12,7 @@ return [
     | copy your module assets (CSS, images, etc.) to your public directory.
     |
     */
-    'path' => app_path('Espesyalista\\Api'),
+    'path' => app_path('Espesyalista/Api'),
 
     /*
     |--------------------------------------------------------------------------

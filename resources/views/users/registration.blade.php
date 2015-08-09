@@ -6,6 +6,9 @@
             padding-top:100px;
         }
         .container {
+            text-align: center;
+        }
+        .alignment {
             text-align: left;
         }
     </style>
@@ -39,17 +42,21 @@
 
                 <div class="form-inline form-group">
                     <label class="col-sm-2 control-label" for="sm">Gender</label>
-                    <div class="radio">
-                        <label><input type="radio" name="optradio">Male</label>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio" name="optradio">Female</label>
+                    <div class="alignment">
+                        <div class="radio">
+                            <label class="control-label"><input type="radio" name="optradio">Male</label>
+                        </div>
+                        <div class="radio">
+                            <label class="control-label"><input type="radio" name="optradio">Female</label>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control input-sm rows="3" id="comment"></textarea>
+                    <label class="col-sm-2 control-label" for="sm">Comment</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="sm"></textarea>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -71,16 +78,13 @@
                     <div class="col-sm-10">
                         <input class="form-control" type="password" id="sm">
                     </div>
-                    <button type="button" class="btn btn-danger btn-sm">Register</button>
                 </div>
-
-                </form>
-                <hr>
-
-
+                <div class="form-group form-group-sm">
+                    <div class="col-sm-12"><hr>
+                        <button type="button" class="btn btn-danger btn-sm">Register</button>
+                    </div>
+                </div>
             </form>
-
-            </div>
         </div>
     </div>
 @stop

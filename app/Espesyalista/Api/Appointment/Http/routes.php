@@ -11,8 +11,7 @@
 |
 */
 
-Route::group(['prefix' => 'appointment'], function() {
-	Route::get('/', function() {
-		dd('This is the Appointment module index page.');
-	});
+Route::group(['prefix' => 'api/v1/appointments'], function() {
+	Route::resource('/', 'AppointmentsController');
+    Route::get('/clinic/{id}', 'AppointmentsController@getClinicAppointmentsToday');
 });

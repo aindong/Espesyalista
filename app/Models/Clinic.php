@@ -10,4 +10,9 @@ class Clinic extends Model
     {
         return unserialize($value);
     }
+
+    public function appointments()
+    {
+        return $this->hasMany('App\Models\Appointment');
+    }
 }

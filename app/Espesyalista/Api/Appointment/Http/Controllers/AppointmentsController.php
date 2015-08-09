@@ -23,8 +23,17 @@ class AppointmentsController extends ApiController
             return $this->responseNotFound();
         }
 
-        // Fire user booked
-        event(new UserBooked($result));
+        return $this->responseOk($result);
+    }
+
+    public function getClinicAppointmentsToday($clinicId)
+    {
+        $result = $this->appointment->getAppointmentsTodayForClinic($clinicId);
+
+        if ($result->isEmpty())
+        {
+            return $this->responseNotFound();
+        }
 
         return $this->responseOk($result);
     }
@@ -45,6 +54,9 @@ class AppointmentsController extends ApiController
         $data = \Input::all();
 
         $result = $this->appointment->create($data);
+
+        // Fire user booked
+        event(new UserBooked($result));
 
         return $this->createResponse($result);
     }

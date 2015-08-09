@@ -30,7 +30,7 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-info btn-sm">Login</button>
+                <button type="button" class="btn btn-danger btn-sm">Login</button>
 
             </form>
             <div class="align_center">

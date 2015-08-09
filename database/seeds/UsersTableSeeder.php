@@ -47,7 +47,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Gosselin',
             'middlename'    => 'Hulabot',
             'email'         => 'chris@gosselin.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092031',
             'password'      => Hash::make('password')
         ]);
 
@@ -57,7 +57,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Williamson',
             'middlename'    => 'Caesar',
             'email'         => 'brielle@williamson.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092032',
             'password'      => Hash::make('password')
         ]);
 
@@ -67,7 +67,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Stevens',
             'middlename'    => 'Cox',
             'email'         => 'carstev@cox.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092033',
             'password'      => Hash::make('password')
         ]);
 
@@ -77,7 +77,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Satou',
             'middlename'    => 'Ken',
             'email'         => 'airi@satouken.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092034',
             'password'      => Hash::make('password')
         ]);
 
@@ -87,7 +87,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Camacho',
             'middlename'    => 'Winters',
             'email'         => 'finn@winters.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092035',
             'password'      => Hash::make('password')
         ]);
 
@@ -97,7 +97,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'House',
             'middlename'    => 'Liang',
             'email'         => 'michelle@liang.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092036',
             'password'      => Hash::make('password')
         ]);
 
@@ -107,7 +107,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Alexander',
             'middlename'    => 'Greer',
             'email'         => 'jonas@alexander.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092037',
             'password'      => Hash::make('password')
         ]);
 
@@ -117,7 +117,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Frost',
             'middlename'    => 'Fitzpatrick',
             'email'         => 'fitzpatrick@frost.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092038',
             'password'      => Hash::make('password')
         ]);
 
@@ -127,7 +127,7 @@ class UsersTableSeeder extends Seeder
             'lastname'      => 'Flynn',
             'middlename'    => 'Davidson',
             'email'         => 'flynn@quinn.com',
-            'mobilenum'     => '09124092030',
+            'mobilenum'     => '09124092039',
             'password'      => Hash::make('password')
         ]);
     }

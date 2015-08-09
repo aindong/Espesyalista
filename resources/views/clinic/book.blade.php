@@ -131,7 +131,7 @@
 @stop
 
 @section('page-script')
-
+    <script src="/assets/js/modules/materialadmin/core/demo/DemoFormWizard.js"></script>
     <script>
         $(document).ready(function(){
 

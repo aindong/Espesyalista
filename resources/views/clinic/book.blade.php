@@ -145,7 +145,7 @@
 
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <a href="" class="btn btn-danger confirm"> Confirm Booking </a>
+                                                    <button type="button" class="btn btn-danger btn-loading-state confirm" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading..."> Confirm Booking </button>
                                                 </div>
                                             </div>
 
@@ -194,8 +194,6 @@
         (function(){
 
             $('.confirm').on('click', function(e) {
-                e.preventDefault();
-
                 var data = {};
                 $.post('/api/v1/appointments', data, function(res) {
                     $('#myModal').modal('show');

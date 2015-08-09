@@ -68,9 +68,9 @@ class NotifyViaSms
         $message  = "Booking information: \n";
         $message .= "Clinic: Philcare \n";
         $message .= "Date: 10/10/2015 \n";
-        $message .= "Thank you";
+        $message .= "Thank you\nEspesyalistaTeam\n";
 
-        $res = $this->send($message, '09229357919');
+        $res = $this->send($message, '09253072394');
         \Log::info('UserBooked: ' .$res);
     }
 }

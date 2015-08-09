@@ -3,8 +3,6 @@
 namespace App\Listeners;
 
 use App\Events\UserBooked;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class NotifyViaSms
 {
@@ -43,13 +41,20 @@ class NotifyViaSms
         curl_setopt($ch, CURLOPT_POST, count($params));
         curl_setopt($ch, CURLOPT_POSTFIELDS, $query);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $response = curl_exec($ch);
+
+        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $error = curl_error($ch);
         curl_close($ch);
         // Add the message_id in the response.
         $response = json_decode($response, true);
         $response['message_id'] = $message_id;
         $response = json_encode($response);
+
         return $response;
+        //return $httpcode . '-'. $response . ' = ' . $error;
     }
 
     /**
@@ -65,6 +70,7 @@ class NotifyViaSms
         $message .= "Date: 10/10/2015 \n";
         $message .= "Thank you";
 
-        $this->send($message, '09253072394');
+        $res = $this->send($message, '09229357919');
+        \Log::info('UserBooked: ' .$res);
     }
 }

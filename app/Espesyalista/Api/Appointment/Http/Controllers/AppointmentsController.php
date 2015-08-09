@@ -49,14 +49,14 @@ class AppointmentsController extends ApiController
         return $this->responseOk($result);
     }
 
-    public function store($id)
+    public function store()
     {
         $data = \Input::all();
 
-        $result = $this->appointment->create($data);
-
         // Fire user booked
-        event(new UserBooked($data));
+        event(new UserBooked($data));exit;
+
+        $result = $this->appointment->create($data);
 
         return $this->createResponse($result);
     }

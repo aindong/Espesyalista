@@ -3,7 +3,6 @@ namespace App\Espesyalista\Api\Appointment\Http\Controllers;
 
 use App\Espesyalista\Api\Appointment\Interfaces\AppointmentsRepoInterface;
 use App\Espesyalista\Base\Controllers\ApiController;
-use App\Events\UserBooked;
 
 class AppointmentsController extends ApiController
 {
@@ -54,7 +53,7 @@ class AppointmentsController extends ApiController
         $data = \Input::all();
 
         // Fire user booked
-        event(new UserBooked($data));exit;
+        //event(new UserBooked($data));exit;
 
         $result = $this->appointment->create($data);
 

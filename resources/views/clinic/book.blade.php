@@ -15,6 +15,7 @@
         #front_booking .navbar #active {
             background-color: transparent !important;
         }
+        #demo-date-inline { padding-left: 40%; }
     </style>
 @stop
 
@@ -58,7 +59,7 @@
 
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <h3 for="State" class="control-label">State : </h3>
+                                                    <h3 for="State" class="control-label">Country : </h3>
                                                     <h4 for="State" class="form-control">Philippines</h4>
                                                 </div>
                                             </div>
@@ -68,9 +69,7 @@
                                             <br/><br/>
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <form class="form">
-                                                        <div id="demo-date-inline"></div>
-                                                    </form>
+                                                    <div id="demo-date-inline"></div>
                                                 </div><!--end .card-body -->
                                             </div><!--end .card -->
                                         </div><!--end #tab2 -->
@@ -95,11 +94,11 @@
                                                 <div class="form-group">
                                                     <select id="Doctor2" name="Doctor" class="form-control">
                                                         <option value="">&nbsp;</option>
-                                                        <option value="1">Angelica Ramos</option>
-                                                        <option value="2">Ashton Cox</option>
-                                                        <option value="3">Cedric Kelly</option>
-                                                        <option value="5">Zorita Serrano</option>
-                                                        <option value="6">Tiger Nixon</option>
+                                                        <option value="1">Dr. Angelica Ramos</option>
+                                                        <option value="2">Dr. Ashton Cox</option>
+                                                        <option value="3">Dr. Cedric Kelly</option>
+                                                        <option value="5">Dr. Zorita Serrano</option>
+                                                        <option value="6">Dr. Tiger Nixon</option>
                                                     </select>
                                                     <label for="Doctor2">Doctor</label>
                                                     <p class="help-block">Please select a doctor.</p>
@@ -108,18 +107,48 @@
                                         </div><!--end #tab3 -->
                                         <div class="tab-pane" id="tab4">
                                             <br/><br/>
-                                            <div class="form-group">
-                                                <select id="Age1" name="Age" class="form-control">
-                                                    <option value="">&nbsp;</option>
-                                                    <option value="30">30</option>
-                                                    <option value="40">40</option>
-                                                    <option value="50">50</option>
-                                                    <option value="60">60</option>
-                                                    <option value="70">70</option>
-                                                </select>
-                                                <label for="Age1">Age</label>
-                                                <p class="help-block">This is supporting text for this field.</p>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <h3 for="City" class="control-label">Date of Appointment : </h3>
+                                                    <h4 for="City" class="form-control">09 August 2015, 9:00 AM</h4>
+                                                </div>
                                             </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <h3 for="State" class="control-label">Doctor : </h3>
+                                                    <h4 for="State" class="form-control">Dr. Ashton Cox</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <h3 for="Address" class="control-label">Hospital : </h3>
+                                                    <h4 for="address" class="form-control">Makati Medical Center</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <h3 for="City" class="control-label">City : </h3>
+                                                    <h4 for="City" class="form-control">Makati City</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <h3 for="State" class="control-label">Country : </h3>
+                                                    <h4 for="State" class="form-control">Philippines</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <a href="" class="btn btn-danger" > Confirm Booking </a>
+                                                </div>
+                                            </div>
+
                                         </div><!--end #tab4 -->
                                     </div><!--end .tab-content -->
                                     <ul class="pager wizard">
@@ -142,13 +171,6 @@
 
 @section('page-script')
     <script src="/assets/js/modules/materialadmin/core/demo/DemoFormWizard.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#demo-date-inline').datepicker({
-            });
-        });
-
-
-    </script>
+    <script src="/assets/js/modules/materialadmin/core/demo/DemoFormComponents.js"></script>
 
 @stop

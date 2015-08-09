@@ -12,7 +12,6 @@
     </style>
 
     <div class="container">
-        <form action="">
             <form class="form-sign">
                 <h2 class="form-signin-heading">Sign in</h2>
                 <label for="inputFirstname" class="sr-only">Firstname</label>
@@ -32,10 +31,8 @@
                                     <a href="/login/google"><i class="fa fa-google-plus-square fa-3x" style="color:#d6412d ;"></i></a>
                                 </div>
                             </div>
-
+                </div>
             </form>
-
-        </form>
 
     </div>
 @stop

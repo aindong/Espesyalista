@@ -23,16 +23,39 @@
             width: 100% !important;
             height: 100% !important;
         }
+
+        #instructionContainer {
+            z-index: 999;
+            min-height: 50px;
+            width: 300px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            overflow-y: scroll;
+            text-wrap: normal;
+        }
+
+        ul#instructions {
+
+        }
     </style>
     <div id="map"></div>
+
+    <div id="instructionContainer" style="display: none;">
+        <h4>Instructions:</h4>
+        <ul id="instructions"></ul>
+    </div>
 @stop
 
 @section('page-script')
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <ul id="instructions"></ul>
     <script src="/assets/js/gmaps.js"></script>
     <script>
         (function(){
+            
             var mapStyle = [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}];
 
             var map = new GMaps({
@@ -99,13 +122,16 @@
                         content: createContent(data)
                     },
                     click: function() {
+                        $('#instructions').html('');
+                        map.cleanRoute();
                         map.travelRoute({
                             origin: [userPosition.lat, userPosition.lng],
                             destination: [data.location.lat, data.location.lon],
                             travelMode: 'driving',
                             step: function(e) {
+                                $('#instructionContainer').show();
                                 $('#instructions').append('<li>'+e.instructions+'</li>');
-                                $('#instructions li:eq(' + e.step_number + ')').delay(450 * e.step_number).fadeIn(200, function() {
+                                $('#instructions li:eq(' + e.step_number + ')').delay(200 * e.step_number).fadeIn(200, function() {
                                     map.drawPolyline({
                                         path: e.path,
                                         strokeColor: 'red',

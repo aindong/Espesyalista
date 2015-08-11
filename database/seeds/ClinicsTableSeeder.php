@@ -13,6 +13,7 @@ class ClinicsTableSeeder extends Seeder
     {
         \App\Models\Clinic::create([
             'name'      => 'Philcare Makati',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat'       => 14.55609,
                 'lon'       => 121.02189,
@@ -23,6 +24,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Aventus Medical Care',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.5702459,
                 'lon' => 121.0217766,
@@ -33,6 +35,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'FortMED Medical Clinic',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.5630284,
                 'lon' => 121.0224857,
@@ -43,6 +46,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Biomedix Inc',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.558418,
                 'lon' => 121.014383,
@@ -53,6 +57,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'HP Plus',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.4898456,
                 'lon' => 121.0397747,
@@ -62,77 +67,30 @@ class ClinicsTableSeeder extends Seeder
         ]);
 
         \App\Models\Clinic::create([
-            'name'      => 'Taguig-Pateros District Hospital',
-            'location'  => serialize([
-                'lat' => 14.5108532,
-                'lon' => 121.0341501,
-                'city'      => 'Taguig, Metro Manila',
-                'country'   => 'PH'
-            ])
-        ]);
-
-        \App\Models\Clinic::create([
-            'name'      => 'Paranaque Premier Medical Center',
-            'location'  => serialize([
-                'lat' => 14.4885432,
-                'lon' => 120.9930613,
-                'city'      => 'Parañaque, Metro Manila',
-                'country'   => 'PH'
-            ])
-        ]);
-
-        \App\Models\Clinic::create([
-            'name'      => 'PNP General Hospital',
-            'location'  => serialize([
-                'lat' => 14.6315065,
-                'lon' => 121.04531,
-                'city'      => 'Quezon City, Metro Manila',
-                'country'   => 'PH'
-            ])
-        ]);
-
-        \App\Models\Clinic::create([
             'name'      => 'Delos Santos Medical Centre',
+            'city'      => 'Quezon City',
             'location'  => serialize([
                 'lat' => 14.6200298,
                 'lon' => 121.0175623,
-                'city'      => 'Quezon City, Metro Manila',
+                'city'      => 'Quezon City',
                 'country'   => 'PH'
             ])
         ]);
 
         \App\Models\Clinic::create([
             'name'      => 'AFP Medical Center. Gen V.luna',
+            'city'      => 'Quezon City',
             'location'  => serialize([
                 'lat' => 14.63485,
                 'lon' => 121.051955,
-                'city'      => 'Quezon City, Metro Manila',
-                'country'   => 'PH'
-            ])
-        ]);
-
-        \App\Models\Clinic::create([
-            'name'      => 'Valenzuela General Hospital',
-            'location'  => serialize([
-                'lat' => 14.6897932,
-                'lon' => 120.9780711,
-                'city'      => 'Valenzuela, Metro Manila',
-                'country'   => 'PH'
-            ])
-        ]);
-
-        \App\Models\Clinic::create([
-            'name'      => 'Dr. Jose Fabella Memorial Hospital',
-            'location'  => serialize([
-                'lat' => 14.606207,
-                'lon' => 120.984143,
-                'city'      => 'Manila, City of Manila',
+                'city'      => 'Quezon City',
                 'country'   => 'PH'
             ])
         ]);
 
         \App\Models\Clinic::create([
             'name'      => 'Canossa Health And Social Center',
+            'city'      => 'Manila',
             'location'  => serialize([
                 'lat' => 14.6235757,
                 'lon' => 120.9620583,
@@ -143,16 +101,18 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Centuria Medical Makati',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.566844,
                 'lon' => 121.028749,
-                'city'      => 'Makati Avenue',
+                'city'      => 'Makati City',
                 'country'   => 'PH'
             ])
         ]);
 
         \App\Models\Clinic::create([
             'name'      => 'Derma 360',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.565516,
                 'lon' => 121.036438,
@@ -163,6 +123,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Asian Center for Dental Specialties',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.554642,
                 'lon' => 121.015072,
@@ -173,6 +134,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Patient First Medical Center',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.552213,
                 'lon' => 121.025712,
@@ -183,6 +145,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Dermclinic',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.5519936,
                 'lon' => 121.0155686,
@@ -193,6 +156,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Aventus Medical Care, Inc.',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.5702459,
                 'lon' => 121.0217766,
@@ -203,6 +167,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Clarence Slimming and Dermatology Centre',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.5587504,
                 'lon' => 121.0329461,
@@ -213,6 +178,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Skin Metro Face & Body Care',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.570218,
                 'lon' => 121.0218649,
@@ -223,6 +189,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Shinagawa Lasik and Aesthetics Philippines',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.556576,
                 'lon' => 121.022229,
@@ -233,6 +200,7 @@ class ClinicsTableSeeder extends Seeder
 
         \App\Models\Clinic::create([
             'name'      => 'Contours Advanced Face and Body Sculpting Institute',
+            'city'      => 'Makati City',
             'location'  => serialize([
                 'lat' => 14.537812,
                 'lon' => 121.017451,
@@ -240,5 +208,18 @@ class ClinicsTableSeeder extends Seeder
                 'country'   => 'PH'
             ])
         ]);
+
+//        // Tarlac Clinic
+//        \App\Models\Clinic::create([
+//            'name'      => 'Contours Advanced Face and Body Sculpting Institute',
+//            'city'      => 'Makati City',
+//            'location'  => serialize([
+//                'lat' => 14.537812,
+//                'lon' => 121.017451,
+//                'city'      => 'Paseo De Magallanes 1232, Makati',
+//                'country'   => 'PH'
+//            ])
+//        ]);
+
     }
 }

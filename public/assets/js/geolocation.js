@@ -31,13 +31,18 @@
         });
     });
 
+    var lat = 14.5591271;
+    var lng = 121.0300255;
+
     // Locate user current location
     GMaps.geolocate({
         success: function(position) {
             map.setCenter(position.coords.latitude, position.coords.longitude);
             map.addMarker({
-                lat: position.coords.latitude,
-                lng: position.coords.longitude,
+                //lat: position.coords.latitude,
+                //lng: position.coords.longitude,
+                lat: lat,
+                lng: lng,
                 title: 'You are here',
                 infoWindow: {
                     content: '<p>You are here</p>'

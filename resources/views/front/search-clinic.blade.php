@@ -55,6 +55,5 @@
 
 @section('page-script')
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="/assets/js/gmaps.js"></script>
-    <script src="/assets/js/geolocation.js"></script>
+    <script src="/assets/js/min/geolocation.js"></script>
 @stop

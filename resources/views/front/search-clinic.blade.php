@@ -2,18 +2,16 @@
 
 @section('content')
     <style>
-        html,
-        body,
-        #map {
-            margin-top: 20px;
-            position: relative;
-            padding-bottom: 65%; // This is the aspect ratio
-            height: 0;
-            overflow: hidden;
+        #map-wrapper {
+            background: #58B;
+            padding-top: 50px;
         }
 
         #map {
-            background: #58B;
+            position: relative;
+            overflow: hidden;
+            height: 20px;
+            padding-bottom: 45%;
         }
 
         #map iframe {
@@ -26,32 +24,37 @@
 
         #instructionContainer {
             z-index: 999;
-            min-height: 50px;
-            width: 300px;
-            position: absolute;
-            top: 20px;
+            min-width: 50px;
+            max-width: 300px;
+            width: 100%;
+            position: fixed;
+            top: 80px;
             right: 20px;
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.5);
             color: #000;
-            overflow-y: scroll;
             text-wrap: normal;
         }
 
-        ul#instructions {
-
+        #instructionContainer ul {
+            overflow-y: scroll;
+            min-height: 50px;
+            max-height: 350px;
         }
     </style>
-    <div id="map"></div>
 
-    <div id="instructionContainer" style="display: none;">
-        <h4>Instructions:</h4>
-        <ul id="instructions"></ul>
+    <div id="map-wrapper">
+        <div id="map"></div>
+
+        <div id="instructionContainer" style="display: none;">
+            <h4>Instructions:</h4>
+            <ul id="instructions"></ul>
+        </div>
     </div>
 @stop
 
 @section('page-script')
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="/assets/js/gmaps.js"></script>
-    <script src="/assets/js/geolocationmin.js"></script>
+    <script src="/assets/js/geolocation.js"></script>
 @stop

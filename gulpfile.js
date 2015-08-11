@@ -12,5 +12,9 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    //mix.less('app.less');
+    mix.scripts([
+        'gmaps.js',
+        'geolocation.js'
+    ], 'public/assets/js/min/geolocation.js', 'public/assets/js');
 });
